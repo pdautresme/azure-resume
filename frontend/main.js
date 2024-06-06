@@ -10,7 +10,7 @@ const getVisitCount = () => {
         return response.json()
     }).then(response =>{
         console.log("Website called function from API.")
-        count = response.count;
+        count = response.vCount;
         document.getElementById("counter").innerText = count;
     }).catch(function(error){
         console.log(error);
