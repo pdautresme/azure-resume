@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount();
 })
 
-const functionApi = '';
+const functionApi = 'https://pdafuncapp.azurewebsites.net/api/HttpTrigger1?code=9hOKEFd4QK82Gwk3vscWqnA0t72pDxxDqZJToEDE5NuHAzFu0Kzh8A==';
 
 const getVisitCount = () => {
     let count = 30;
