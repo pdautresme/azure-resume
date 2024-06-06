@@ -1,0 +1,37 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "Request",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "Response"
+    },
+    {
+      "name": "CosmosIn",
+      "databaseName": "AzureResume",
+      "collectionName": "Counter",
+      "connectionStringSetting": "pdacosmo_DOCUMENTDB",
+      "sqlQuery": "SELECT * FROM c",
+      "direction": "in",
+      "type": "cosmosDB"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "CosmosOut",
+      "databaseName": "AzureResume",
+      "collectionName": "Counter",
+      "createIfNotExists": false,
+      "connectionStringSetting": "pdacosmo_DOCUMENTDB"
+    }
+  ]
+}
